@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFE0;
+    color: #333;
+}
+
+header {
+    background-color: #009688;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #009688;
+}
+
+h3 {
+    color: #009688;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+  border: 5px solid #009688;
+}
+
+.rounded-video-container {
+    overflow: hidden;
+}
+
+.rounded-video-container video {
+    border-radius: 20px; /* Adjust the value as needed for the desired roundness */
+}
