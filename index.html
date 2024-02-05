@@ -2,6 +2,22 @@
 
 <head>
 <title>Climate Change Awareness</title>
+	<script>
+    // Check if the 'visitorCount' key is present in localStorage
+    if (!localStorage.getItem('visitorCount')) {
+      // If not present, initialize the count to 1
+      localStorage.setItem('visitorCount', 1);
+    }
+
+    // Get the current visitor count from localStorage
+    var currentCount = localStorage.getItem('visitorCount');
+
+    // Display the current count on the page
+    document.getElementById('visitor-count').textContent = 'You are visitor number ' + currentCount;
+
+    // Increment the count for each new visitor
+    localStorage.setItem('visitorCount', parseInt(currentCount) + 1);
+  </script>
 <link rel="stylesheet" href="styles.css">
 <style>
 .slideshow-container {
@@ -65,6 +81,7 @@ body {
 
 </style>
 </head>
+<p id="visitor-count">Loading...</p>
 
 <body>
     <header>
